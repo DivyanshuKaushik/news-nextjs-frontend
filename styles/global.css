@@ -1,0 +1,38 @@
+*{
+    -webkit-tap-highlight-color: transparent;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+nav a{
+    color: white;
+}
+.purple{
+    background: #4776E6;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #8E54E9, #4776E6);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #8E54E9, #4776E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+.dashboard{
+    /* background: linear-gradient(to right bottom, #3f4756, #4a4a69, #634874, #834074, #a23567); */
+    background: #4776E6;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #8E54E9, #4776E6);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #8E54E9, #4776E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+@tailwind components;
+
+@layer components {
+    .search-filter{
+        @apply text-sm text-gray-600 shadow-lg border rounded-full mx-2 my-2 px-4 py-2 active:scale-90  transform transition duration-200 ease-out cursor-pointer hover:text-red-400;
+    }
+    .nav-link a{
+        @apply text-white;
+    }
+    .btn{
+        @apply transition-all active:scale-90 duration-300  hover:bg-transparent;
+    }
+    .post_input{
+        @apply my-2 lg:ml-4 px-3 py-2 rounded-md focus:outline-none w-full border dark:bg-transparent;
+    }
+}
